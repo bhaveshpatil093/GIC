@@ -37,8 +37,10 @@ export const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="gaming" size="sm">
-              Register Now
+            <Button variant="gaming" size="sm" asChild>
+              <a href="https://forms.gle/xGjQVgUsjv2LSSvV7" target="_blank" rel="noopener noreferrer">
+                Register Now
+              </a>
             </Button>
           </div>
 
@@ -67,8 +69,10 @@ export const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="gaming" size="sm" className="w-fit">
-                Register Now
+              <Button variant="gaming" size="sm" className="w-fit" asChild>
+                <a href="https://forms.gle/xGjQVgUsjv2LSSvV7" target="_blank" rel="noopener noreferrer">
+                  Register Now
+                </a>
               </Button>
             </div>
           </div>
