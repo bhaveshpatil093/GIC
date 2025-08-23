@@ -142,11 +142,11 @@ export const TimelineSection = () => {
                                     <img 
                                       src={event.mentor.photo} 
                                       alt={`${event.mentor.name} profile`}
-                                      className="w-10 h-10 rounded-full object-cover border-2 border-neon-green"
+                                      className="w-16 h-16 rounded-full object-cover border-2 border-neon-green"
                                     />
                                   ) : (
-                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
-                                      <User className="w-5 h-5 text-white" />
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
+                                      <User className="w-6 h-6 text-white" />
                                     </div>
                                   )}
                                 </div>
@@ -184,11 +184,11 @@ export const TimelineSection = () => {
                                         <img 
                                           src={mentor.photo} 
                                           alt={`${mentor.name} profile`}
-                                          className="w-10 h-10 rounded-full object-cover border-2 border-neon-green"
+                                          className="w-16 h-16 rounded-full object-cover border-2 border-neon-green"
                                         />
                                       ) : (
-                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
-                                          <User className="w-5 h-5 text-white" />
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
+                                          <User className="w-6 h-6 text-white" />
                                         </div>
                                       )}
                                     </div>
