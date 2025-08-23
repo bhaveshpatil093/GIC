@@ -15,7 +15,8 @@ export const TimelineSection = () => {
         name: "Yoonjung Lera",
         title: "CEO, LettuceBuild",
         linkedin: "https://www.linkedin.com/in/yoonjung-lera-92045349/",
-        description: "Yoonjung Lera is a seasoned professional with expertise in business development and strategic partnerships, currently contributing her skills to innovative ventures."
+        description: "Yoonjung Lera is a seasoned professional with expertise in business development and strategic partnerships, currently contributing her skills to innovative ventures.",
+        photo: ""
       }
     },
     {
@@ -27,7 +28,8 @@ export const TimelineSection = () => {
         name: "Coach Lucas",
         title: "Lead Coach, LettuceBuild",
         linkedin: "https://www.linkedin.com/in/lucas-wang-3160b720a/",
-        description: "Lucas Wang is a dedicated Design major at Stanford University with a passion for game development and education, having built curriculum and taught courses in programming and game design since high school."
+        description: "Lucas Wang is a dedicated Design major at Stanford University with a passion for game development and education, having built curriculum and taught courses in programming and game design since high school.",
+        photo: "/Coach Lucas.jpeg"
       }
     },
     {
@@ -39,7 +41,8 @@ export const TimelineSection = () => {
         name: "Mr. V",
         title: "Senior Software Engineer",
         linkedin: "https://www.linkedin.com/in/mvaganov/",
-        description: "Mr. V (Michael Vaganov) is a seasoned software engineer and educator with over 15 years of experience in game development, XR prototyping, and computer science instruction."
+        description: "Mr. V (Michael Vaganov) is a seasoned software engineer and educator with over 15 years of experience in game development, XR prototyping, and computer science instruction.",
+        photo: ""
       }
     },
     {
@@ -52,13 +55,15 @@ export const TimelineSection = () => {
           name: "Mr. Tom Smith",
           title: "Educational Game Designer, Roblox",
           linkedin: "https://www.linkedin.com/in/tomsmith/",
-          description: "Tom Smith is a veteran educational game designer and author with over two decades of experience crafting engaging player experiences for major franchises at companies like Roblox and Disney."
+          description: "Tom Smith is a veteran educational game designer and author with over two decades of experience crafting engaging player experiences for major franchises at companies like Roblox and Disney.",
+          photo: "/Tom Smith.jpeg"
         },
         {
           name: "Dohyeon",
           title: "14 year-old game entrepreneur",
           linkedin: "",
-          description: "Dohyeon is a 14 year-old game entrepreneur."
+          description: "Dohyeon is a 14 year-old game entrepreneur.",
+          photo: ""
         }
       ]
     },
@@ -71,7 +76,8 @@ export const TimelineSection = () => {
         name: "Coach Steven",
         title: "Coach, LettuceBuild",
         linkedin: "https://www.linkedin.com/in/steven-christian-42387649/",
-        description: "Coach Steven (Steven Christian) is an MD/PhD student and XR educator who combines neuroscience with creative technology to make healthcare education accessible and inclusive."
+        description: "Coach Steven (Steven Christian) is an MD/PhD student and XR educator who combines neuroscience with creative technology to make healthcare education accessible and inclusive.",
+        photo: ""
       }
     }
   ];
@@ -132,9 +138,17 @@ export const TimelineSection = () => {
                             <div className="bg-background/50 rounded-lg p-4 border border-primary/10">
                               <div className="flex items-start gap-3">
                                 <div className="flex-shrink-0">
-                                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
-                                    <User className="w-5 h-5 text-white" />
-                                  </div>
+                                  {event.mentor.photo ? (
+                                    <img 
+                                      src={event.mentor.photo} 
+                                      alt={`${event.mentor.name} profile`}
+                                      className="w-10 h-10 rounded-full object-cover border-2 border-neon-green"
+                                    />
+                                  ) : (
+                                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
+                                      <User className="w-5 h-5 text-white" />
+                                    </div>
+                                  )}
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center gap-2 mb-2">
@@ -166,9 +180,17 @@ export const TimelineSection = () => {
                                 <div key={mentorIndex} className="bg-background/50 rounded-lg p-4 border border-primary/10">
                                   <div className="flex items-start gap-3">
                                     <div className="flex-shrink-0">
-                                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
-                                        <User className="w-5 h-5 text-white" />
-                                      </div>
+                                      {mentor.photo ? (
+                                        <img 
+                                          src={mentor.photo} 
+                                          alt={`${mentor.name} profile`}
+                                          className="w-10 h-10 rounded-full object-cover border-2 border-neon-green"
+                                        />
+                                      ) : (
+                                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-green to-neon-cyan flex items-center justify-center">
+                                          <User className="w-5 h-5 text-white" />
+                                        </div>
+                                      )}
                                     </div>
                                     <div className="flex-1 min-w-0">
                                       <div className="flex items-center gap-2 mb-2">
