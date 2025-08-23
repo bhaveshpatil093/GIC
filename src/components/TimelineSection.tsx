@@ -16,7 +16,7 @@ export const TimelineSection = () => {
         title: "CEO, LettuceBuild",
         linkedin: "https://www.linkedin.com/in/yoonjung-lera-92045349/",
         description: "Yoonjung Lera is a seasoned professional with expertise in business development and strategic partnerships, currently contributing her skills to innovative ventures.",
-        photo: ""
+        photo: "/Yoonjung Lera.jpg"
       }
     },
     {
@@ -42,7 +42,7 @@ export const TimelineSection = () => {
         title: "Senior Software Engineer",
         linkedin: "https://www.linkedin.com/in/mvaganov/",
         description: "Mr. V (Michael Vaganov) is a seasoned software engineer and educator with over 15 years of experience in game development, XR prototyping, and computer science instruction.",
-        photo: ""
+        photo: "/Mr V.png"
       }
     },
     {
@@ -63,7 +63,7 @@ export const TimelineSection = () => {
           title: "14 year-old game entrepreneur",
           linkedin: "",
           description: "Dohyeon is a 14 year-old game entrepreneur.",
-          photo: ""
+          photo: "/Dohyeon.png"
         }
       ]
     },
@@ -77,7 +77,7 @@ export const TimelineSection = () => {
         title: "Coach, LettuceBuild",
         linkedin: "https://www.linkedin.com/in/steven-christian-42387649/",
         description: "Coach Steven (Steven Christian) is an MD/PhD student and XR educator who combines neuroscience with creative technology to make healthcare education accessible and inclusive.",
-        photo: ""
+        photo: "/Coach Steven.png"
       }
     }
   ];
