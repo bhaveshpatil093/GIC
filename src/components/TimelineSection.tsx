@@ -21,7 +21,7 @@ export const TimelineSection = () => {
     },
     {
       date: "Sep. 9th, 2025 (Tue)",
-      title: "Meme Challenge + Boba Chat Hangout",
+      title: "Show and Tell",
       icon: MessageCircle,
       color: "text-neon-cyan",
       mentor: {
